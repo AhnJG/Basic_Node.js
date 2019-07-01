@@ -51,7 +51,7 @@
 
 ### URL Routing 처리
 - GET 요청
-  - app.get('/', function(req, res) { res.send("<h1> Hi Friend </H1>") })
+  - app.get('/', function(req, res) { res.send("Hi Friend") })
     - '/' 로 요청이 들어왔을때 (localhost:3000/)
   - app.get('/main', function(req, res) { res.sendFile(__dirname + "/public/main.html") })
     - '/main' 로 요청이 들어왔을때 (localhost:3000/main)
