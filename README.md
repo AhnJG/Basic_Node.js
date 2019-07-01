@@ -30,3 +30,21 @@
     - --save : 노드 프로젝트가 의존하고 있는 외부 라이브러리 목록이 저장된다.
     - package.json에 저장된다
     - node_moudules 폴더에 관련된 파일들이 설치된다.
+
+### Express 기반 웹서버 구동
+- node_modules에 있는 파일에 있는 함수 가져오기
+  - var express = require('express')
+- express 함수 실행
+  - var app = express()
+- 3000번 포트, 서버 시작
+  - app.listen(3000, function() { console.log("start! express server on port 3000") });
+- 파일 실행
+  - node 파일명
+  - node app.js
+- 동기적인 기본 코드들이 먼저 실행되고 callback 함수와 같은 비동기 코드들은 나중에 실행된다.
+
+- 자동으로 파일의 변화를 감지하고 node 서버를 종료했다가 시작 (nodemon)
+  - npm install nodemon -g
+    - -g : 모든 dir에서 실행가능 하도록 다운로드
+  - nodemon 파일명
+  - nodemon app.js
