@@ -48,3 +48,21 @@
     - -g : 모든 dir에서 실행가능 하도록 다운로드
   - nodemon 파일명
   - nodemon app.js
+
+### URL Routing 처리
+- GET 요청
+  - app.get('/', function(req, res) { res.send("<h1> Hi Friend </H1>") })
+    - '/' 로 요청이 들어왔을때 (localhost:3000/)
+  - app.get('/main', function(req, res) { res.sendFile(__dirname + "/public/main.html") })
+    - '/main' 로 요청이 들어왔을때 (localhost:3000/main)
+    - __dirname : 현재파일의 절대경로
+
+### static 디렉토리 설정
+- static 파일
+  - javascript, css, html, img 
+- Express에 static dir 설정
+  - app.use(express.static('public'))
+     - public : 폴더이름
+- static dir 설정을 해주지 않으면 아래와 같은 태그의 링크들을 가져오지 못한다
+  - <script src="main.js">
+  - <img src="images/crong.jpg">
