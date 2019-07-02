@@ -129,7 +129,7 @@ res.render('email.ejs', {'email' : req.body.email})
 <script> 
   // 버튼을 클릭하면 sendAjax() 함수 실행
   document.querySelector('.ajaxsend').addEventListener('click', function() {
-    var inputData = document.form[0].elements[0].value; // 현재 문서의 첫번째 form의 첫번째 element의 값
+    var inputData = document.forms[0].elements[0].value; // 현재 문서의 첫번째 form의 첫번째 element의 값
     sendAjax('http://localhost:3000/ajax_send_email', inputData)
   })
   
