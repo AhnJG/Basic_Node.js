@@ -115,6 +115,7 @@ app.set('view engine', 'ejs')
 
 - ejs 파일에 데이터 전송
   - res.render('파일명.ejs', {'파라미터 이름' : 값})
+  - email.ejs 파일은 반드시 ~/views/ 폴더에 있어야한다
 ```javascript
 res.render('email.ejs', {'email' : req.body.email})
 ```
