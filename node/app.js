@@ -1,6 +1,16 @@
 var express = require('express')
 var app = express()
 
+var mysql = require('mysql')
+var connection = mysql.createConnection({
+	host : 'localhost',
+	port : 3306,
+	user : 'root',
+	password : 'qkeksnsk12',
+	database : 'testnode'})
+
+connection.connect()
+
 app.listen(3000, function(){
 	console.log('start! express servr on port 3000');
 });
@@ -25,9 +35,22 @@ app.post('/email_post', function(req, res){
 	res.render("email.ejs", {name: req.body.email})
 });
 
+console.log('p1')
 app.post('/ajax_send_email', function(req, res){
-	console.log(req.body.email)
+	var email = req.body.email;
+	var responseData = {};
 	
-	var responseData = {'result': 'ok', 'email': req.body.email}
-	res.json(responseData)
+	var query = connection.query('select name from user where id="' + email + '"', function(err, rows) {
+		if(err) throw err;
+		if(rows[0]) {
+			responseData.result = "ok";
+			responseData.name = rows[0].name;
+		}
+		else {
+			responseData.result = "none";
+			responseData.name = "";	
+		}
+		
+		res.json(responseData)
+	})
 });
