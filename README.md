@@ -20,7 +20,7 @@
 - 원격 서버에 변경 사항 올리기
   - git push origin master
 
-<a href="https://rogerdudler.github.io/git-guide/index.ko.html">참조</a>
+<a href="https://rogerdudler.github.io/git-guide/index.ko.html">참조_git-간편 안내서</a><br>
 <a href="https://wayhome25.github.io/git/2017/04/09/git-06-remote-repository/">참조_생활코딩_github clone, remote, pull</a>
 
 ## 1. nodeJS + Express 웹서버 설정
