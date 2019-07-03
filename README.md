@@ -165,15 +165,33 @@ app.post('/ajax_send_email', function(req, res) {
 
 ## 3. Database 연동 기본
 ### mysql 5.7
-설치
-- sudo apt install mysql-server-5.7
-접속
-- mysql -u root -p
-데이터 베이스 확인
-- show databases;
-데이터 베이스 사용
-- use db이름;
-
+- 설치
+  - sudo apt install mysql-server-5.7
+- 접속
+  - mysql -u root -p
+- 데이터 베이스 만들기
+  - create database db이름;
+- 데이터 베이스 확인
+  - show databases;
+- 데이터 베이스 사용
+  - use db이름;
+- 테이블 만들기
+  - create table user(
+      name varchar(20) not null,
+      id varchar(20) not null,
+      pw varchar(20) not null);
+- 테이블 목록 조회
+  - show tables;
+- 테이블 정보 조회
+  - desc table이름;
+  - desc user;
+- 데이터 삽입
+  - insert into table이름(컬럼) values(값);
+  - insert into user(name, id, pw) values('ahn', 'arki13', 'password');
+- 데이터 조회
+  - select 컬럼 from 테이블
+  - select * from user;
+  
 ### MySQL 연동 설정
 - mysql 모듈 설치
   - npm install mysql --save
@@ -192,6 +210,7 @@ var connection = mysql.createConnection({
 
 connection.connect()
 ```
+<a href="https://expressjs.com/ko/guide/database-integration.html#mysql">Express mysql 연동 문서</a>
 
 ### MySQL 연동 구현
 - 쿼리 실행 (server)
@@ -223,7 +242,7 @@ xhr.addEventListener('load', function() {
   var result = JSON.parse(xhr.responseText);
   var resultDiv = document.querySelector('.result');
   
-  if(result.result !== "ok") resultDiv.innerHTML = "your email is not fount"
+  if(result.result !== "ok") resultDiv.innerHTML = "your email is not found"
   else resultDiv.innerHTML = result.name;
 });
 
