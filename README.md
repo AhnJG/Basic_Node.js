@@ -162,3 +162,74 @@ app.post('/ajax_send_email', function(req, res) {
 });
   
 ```
+
+## 3. Database 연동 기본
+### mysql 5.7
+설치
+- sudo apt install mysql-server-5.7
+접속
+- mysql -u root -p
+데이터 베이스 확인
+- show databases;
+데이터 베이스 사용
+- use db이름;
+
+### MySQL 연동 설정
+- mysql 모듈 설치
+  - npm install mysql --save
+  
+- db 접속 (연결)하기
+``` javascript
+var mysql = require('mysql')
+
+var connection = mysql.createConnection({
+  host : 'localhost',
+  port : 3306,
+  user : 'root',
+  password : 'asdf1234',
+  database : 'testnode'
+})
+
+connection.connect()
+```
+
+### MySQL 연동 구현
+- 쿼리 실행 (server)
+```javascript
+app.post('/ajax_send_email', function(req, res){
+  var email = req.body.email;
+  var responseData = {}; // json 형태로 초기화
+  
+  var query = connection.query('select name from user where email="' + email + '"', function(err, rows) {
+    if(err) throw err;
+    
+    if(rows[0]) 
+    {
+      responseData.result = "ok";
+      responseData.name = rows[0].name;
+    }
+    else
+    {
+      responseData.result = "none";
+      responseData.name = "";
+    }
+    res.json(responseData)
+  })
+});
+```
+- 쿼리 실행(Client)
+```javascript
+xhr.addEventListener('load', function() {
+  var result = JSON.parse(xhr.responseText);
+  var resultDiv = document.querySelector('.result');
+  
+  if(result.result !== "ok") resultDiv.innerHTML = "your email is not fount"
+  else resultDiv.innerHTML = result.name;
+});
+
+```
+
+
+
+
+
