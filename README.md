@@ -183,6 +183,9 @@ app.post('/ajax_send_email', function(req, res) {
       name varchar(20) not null,
       id varchar(20) not null,
       pw varchar(20) not null);
+- 테이블에 컬럼 추가
+  - alter table [테이블명] add [컬럼] [타입] [옵션]
+  - alter table user add num int not null primary key auto_increment;
 - 테이블 목록 조회
   - show tables;
 - 테이블 정보 조회
