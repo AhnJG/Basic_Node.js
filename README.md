@@ -11,7 +11,9 @@
 - 변경 파일 추가
   - git add *
   - git add 파일명
-
+- 로컬저장소를 origin 원격저장소의 master 브랜치로 연결하여 push한다.
+  - 처음에 한번만 -u 설정을 하면 앞으로 git push 만 입력해도 origin의 master 브랜치로 push한다.
+  - git push -u origin master
 - 변경 파일 확정
   - git commit -m "확정본에 대한 설명"
 
@@ -19,6 +21,7 @@
   - git push origin master
 
 <a href="https://rogerdudler.github.io/git-guide/index.ko.html">참조</a>
+<a href="https://wayhome25.github.io/git/2017/04/09/git-06-remote-repository/">참조_생활코딩_github clone, remote, pull</a>
 
 ## 1. nodeJS + Express 웹서버 설정
 ### NPM Project 시작하기
