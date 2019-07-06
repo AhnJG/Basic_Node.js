@@ -23,6 +23,9 @@
 <a href="https://rogerdudler.github.io/git-guide/index.ko.html">참조_git-간편 안내서</a><br>
 <a href="https://wayhome25.github.io/git/2017/04/09/git-06-remote-repository/">참조_생활코딩_github clone, remote, pull</a>
 
+### Linux 바로가기 링크 생성
+- ln -s [대상폴더][링크이름]
+
 ## 1. nodeJS + Express 웹서버 설정
 ### NPM Project 시작하기
 - npm 프로젝트 만들기
@@ -254,7 +257,30 @@ xhr.addEventListener('load', function() {
 
 ```
 
+## 패스포트기반 인증 로직 구현 (회원가입, 로그인, 로그아웃)
+### passport 환경구축
 
+- npm install passport
+  - 인증 관련 모듈 처리
+  -<a href="http://www.passportjs.org/packages/">참조</a>
+- npm install passport-local
+  - 소셜 로그인을 제외한 일반 local 로그인
+  - <a href="http://www.passportjs.org/packages/passport-local/">참조</a>
+- npm install express-session
+  - session 관련 처리
+  - <a href="https://www.npmjs.com/package/express-session">참조</a>
+- npm install connect-flash
+  - error message를 redirect 과정에서 쉽게 전달해줌
+  - <a href="https://www.npmjs.com/package/connect-flash">참조</a>
+- npm install passport passport-local express-session connect-flash --save-dev
+
+
+```
+var passport = require('passport')
+var LocalStrategy = require('passport-local').Strategy
+var session = require('express-session')
+var flash = require('connect-flash')
+``` 
 
 
 
