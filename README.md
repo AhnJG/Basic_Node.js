@@ -1,5 +1,6 @@
 # Basic_Node.js
 
+#### [node.js 백그라운드(데몬) 실행](https://kamang-it.tistory.com/entry/Packageforever%EA%B3%BC-nodejs-%EB%8D%B0%EB%AA%AC%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89)
 
 ### Git 사용
 - 폴더를 git 저장소로 변경 
