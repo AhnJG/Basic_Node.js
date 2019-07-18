@@ -2,6 +2,7 @@
 
 ### Node.js
 - node는 js를 웹 브라우저 바깥의 환경에서 돌릴 수 있게 해주는 프로그램이다
+#### [node.js 10.x Docs](https://nodejs.org/dist/latest-v10.x/docs/api/)
 
 #### [node.js 백그라운드(데몬) 실행](https://kamang-it.tistory.com/entry/Packageforever%EA%B3%BC-nodejs-%EB%8D%B0%EB%AA%AC%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89)
 
@@ -11,6 +12,8 @@
 #### [node global 전역객체](https://heropy.blog/2018/03/06/node-js-globals/)
 #### [node os 모듈](https://www.opentutorials.org/module/938/7368)
 #### [node path 모듈](https://uxicode.tistory.com/entry/nodejs-path-모듈)
+#### [node url 모듈](https://nodejs.org/api/url.html)
+#### [node url 모듈, Query String 모듈](https://www.opentutorials.org/module/938/7369)
 
 ### Git 사용
 - 폴더를 git 저장소로 변경 
