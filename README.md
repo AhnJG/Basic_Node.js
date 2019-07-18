@@ -1,7 +1,12 @@
 # Basic_Node.js
 
+### Node.js
+- node는 js를 웹 브라우저 바깥의 환경에서 돌릴 수 있게 해주는 프로그램이다
+
 #### [node.js 백그라운드(데몬) 실행](https://kamang-it.tistory.com/entry/Packageforever%EA%B3%BC-nodejs-%EB%8D%B0%EB%AA%AC%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89)
 
+#### [호출스택, 이벤트 루프](https://www.zerocho.com/category/JavaScript/post/597f34bbb428530018e8e6e2)
+#### [이벤트 기반, 싱글 쓰레드, 논 블로킹 I/O](https://andamiro25.tistory.com/196)
 ### Git 사용
 - 폴더를 git 저장소로 변경 
   - git init
