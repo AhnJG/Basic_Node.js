@@ -7,6 +7,11 @@
 
 #### [호출스택, 이벤트 루프](https://www.zerocho.com/category/JavaScript/post/597f34bbb428530018e8e6e2)
 #### [이벤트 기반, 싱글 쓰레드, 논 블로킹 I/O](https://andamiro25.tistory.com/196)
+#### [node 모듈 시스템](https://www.zerocho.com/category/NodeJS/post/5835b500373b5b0018a81a10)
+#### [node global 전역객체](https://heropy.blog/2018/03/06/node-js-globals/)
+#### [node os 모듈](https://www.opentutorials.org/module/938/7368)
+#### [node path 모듈](https://uxicode.tistory.com/entry/nodejs-path-모듈)
+
 ### Git 사용
 - 폴더를 git 저장소로 변경 
   - git init
