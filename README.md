@@ -12,8 +12,11 @@
 #### [node global 전역객체](https://heropy.blog/2018/03/06/node-js-globals/)
 #### [node os 모듈](https://www.opentutorials.org/module/938/7368)
 #### [node path 모듈](https://uxicode.tistory.com/entry/nodejs-path-모듈)
-#### [node url 모듈](https://nodejs.org/api/url.html)
+#### [node url 모듈 document](https://nodejs.org/api/url.html)
 #### [node url 모듈, Query String 모듈](https://www.opentutorials.org/module/938/7369)
+#### [node 암호화 모듈](https://www.zerocho.com/category/NodeJS/post/593a487c2ed1da0018cff95d)
+#### [node 암호화 모듈 document](https://nodejs.org/api/crypto.html#)
+#### [node util deprecate, promisify 모듈](https://right-hot.tistory.com/entry/NodeJS-util-%EB%AA%A8%EB%93%88deprecate-promisify)
 
 ### Git 사용
 - 폴더를 git 저장소로 변경 
