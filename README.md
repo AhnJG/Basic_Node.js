@@ -303,7 +303,8 @@ var flash = require('connect-flash')
 ## Error
 #### Error: connect ETIMEDOUT
 - 해당 주소로 연결 조차 안된다는 오류
-- DB Connection IP와 Port를 
+- DB Connection IP와 Port를 확인해보자
+
 
 
 
