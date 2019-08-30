@@ -18,7 +18,7 @@
 #### [암호화 모듈 document](https://nodejs.org/api/crypto.html#)
 #### [util deprecate, promisify](https://right-hot.tistory.com/entry/NodeJS-util-%EB%AA%A8%EB%93%88deprecate-promisify)
 #### [passport](https://cheese10yun.github.io/Passport-part1/)
-
+#### [이미지 업로드_multer](https://www.zerocho.com/category/NodeJS/post/5950a6c4f7934c001894ea83)
 ### Git 사용
 - 폴더를 git 저장소로 변경 
   - git init
